@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Test</title>
+    <style>
+     .container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+     }
+     #input{
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+        text-align: center;
+     }
+     input{
+         width: auto;
+     }
+    </style>
+  </head>
+
+  <body>
+      <div id="input">
+          <input placeholder="choose file" list="files"> 
+          <datalist id="files">
+            <option value="example 1">example 1</option>
+            <option value="example 2">example 2</option>
+        
+          </datalist>
+          <button>Download and View</button>
+
+         <!-- mode -->
+
+      </div>
+    <main class="container">
+      <!-- Only bit necessary for Cornerstone -->
+      <div id="cornerstone-target" class="item"></div>
+      <div id="axial-target" class="item"></div>
+      <div id="coronal-target" class="item"></div>
+      <div id="sagittal-target" class="item"></div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
